@@ -40,7 +40,7 @@ get_header(); ?>
 					</p>
 
 				<!-- App store link -->	
-				<a href="https://itunes.apple.com/ph/app/a-day-in-the-market/id593049585?mt=8"><img src="<?php bloginfo('template_directory'); ?>/img/appstore.svg" /></a>
+				<a href="https://itunes.apple.com/ph/app/a-day-in-the-market/id593049585?mt=8"><img src="<?php bloginfo('template_directory'); ?>/img/appstor.svg" /></a>
 			
 			</div>
 
