@@ -27,11 +27,11 @@
 			
 			<?php if(have_posts()) : while( have_posts()) : the_post();?>
 			
-			<div class="grid-12" id="social">
-				<div><a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a></div>
-				<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+			<div id="social">
+				<div><a href="<?php the_permalink(); ?>" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a></div>
+				<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 			</div>
-			<br><br>
+			<br><br><br>
 			<div>
 				<h2 style="text-align:center"><?php the_title(); ?></h2>
 				

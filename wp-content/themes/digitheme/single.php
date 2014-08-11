@@ -27,9 +27,10 @@
 			
 			<?php if(have_posts()) : while( have_posts()) : the_post();?>
 			<div id="social">
-				<div><a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a></div>
-				<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				<div><a href="<?php the_permalink(); ?>" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a></div>
+				<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 			</div>
+			<br><br><br>
 			<h2 style="text-align:center"><?php the_title(); ?></h2>
 			
 			<p style="font-size:.7em;text-align:center;">Posted on: <?php the_time('F j, Y'); ?>
