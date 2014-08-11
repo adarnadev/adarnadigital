@@ -112,6 +112,11 @@ License URI: N/A
 	/* Product Page
     ==============================*/
 
+    .productimage{
+    	display:block;
+    	margin:0 auto;
+    }
+
 
 .absolutecenter{
 	display:block;
@@ -124,20 +129,40 @@ License URI: N/A
 }
 #bot{
 	background:url(img/cloudblue.png);
-	height:118px;
+	height:169px;
 	width:100%;
 	position:absolute;
 	bottom:0;
 }
+.bottomme{
+	bottom:0;
+}
 
-
-#blogbg{
-	background:url(img/bg.jpg);
-	background-repeat: repeat-x;
-	height:320wpx;
+h2{
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	margin:0;
+	color:black;
+}
+#postinfo{
+	display:inline;
+	position:inherit;
+	margin-left: 10px;
 }
 #social{
 	position:absolute;
+	margin-left:-90px;
+	margin-top:70px;
+}
+.blogbg{
+	background:url(img/bg.jpg);
+	background-repeat: repeat-x;
+	height:315px;
+
+}
+
+body{
+	margin:0;
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 }
 #header{
         height:300px;
@@ -153,21 +178,67 @@ License URI: N/A
 	position:fixed;
 	margin: -200px 0 0 45%;
 }
+
+#blogcontent{
+	position:absolute;
+	width:80%;
+	padding: 20px 40px 10px 30px;
+	margin-top:80px;
+}
+p{
+	line-height:1.5;
+	font-size: 1.375em;
+}
+.wp-caption p{
+	font-size:15px;
+	font-style: italic;
+}
+
+#blogcontent #blogdetails{
+	font-size: 20px;
+	font-style: italic;
+}
+
+#blogdetails{
+	position:absolute;
+	padding-right:10px;
+	margin-top:-5px;
+	margin-left: -200px;
+	border-right:1px solid;
+	height:100px;
+	width:160px;
+	text-align: right;
+}
+
+#slideshow {
+    margin: 0 auto;
+    position: relative;
+    width: 223px;
+
+}
+#slideshow img{
+	display:block;
+	margin:0 auto;
+}
+#slideshow > div {
+    position: absolute;
+}
+h4{
+	text-align: center;
+	margin-bottom: 5px;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
 .bloghr {
     border-top:3px dotted #62bc60;
 }
-.screenshots{
-	margin:5px;
+.ballonhr{
+	margin-right:20px;
+	margin-left:20px;
+	color: rgb(255, 203, 136);
 }
-
-h1{
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-}
-h2{
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-	margin:0;
-	color:rgb(102,102,102);
-	font-size:2.5em;
+#balloonbar p{
+	text-align: center;
+	font-size: 1em
 }
 h3{
 	font-size:17px;
@@ -175,9 +246,7 @@ h3{
 	margin-top:5px;
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
-h4{
-	text-align: center;
-	margin-bottom: 5px;
+h1{
 	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 h5{
@@ -187,22 +256,14 @@ h5{
 li{
 	font-size: 1.2em;
 }
-p{
-	line-height:1.5;
-	font-size: 1.375em;
-}
-body{
+.imagegrid{
 	margin:0;
-	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-	color:rgb(102,102,102);
+	list-style-type: none;
 }
 
-/*WP shit*/
-.aligncenter{display:block;margin-left:auto;margin-right:auto;}
-.wp-caption p{text-align:center;font-size:15px;font-style: italic;}
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
-
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}

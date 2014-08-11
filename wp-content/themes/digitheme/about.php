@@ -5,11 +5,18 @@ Template Name: about
 get_header(); ?>
 <body class="regbg">
 <div class="texture">
+
 		<div id="topcloud">
+			<?php get_template_part(nav,menu); ?>
 		</div>
 
-				<div id="pagewrap">
-					<?php if(have_posts()) : while( have_posts()) : the_post();?>
+				<div class="grid-container">
+					<div class="grid-12">
+				
+
+
+
+				<?php if(have_posts()) : while( have_posts()) : the_post();?>
 
 					<h1><?php the_title(); ?></h1>
 					<?php the_content(); ?>
@@ -20,16 +27,10 @@ get_header(); ?>
 
 					<p> No posts here ;) </p>
 
-				<?php endif; ?>
+				<?php endif; ?> 
+					</div>
+		
 
 				</div>
-
-
-	<div id="bot">
-		<?php get_template_part(nav,menu); ?> 
-		<div id="botcloud">
-		</div>
-	</div>
-	
 </div>
 <?php get_footer();?>

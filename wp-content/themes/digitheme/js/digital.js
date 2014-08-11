@@ -36,7 +36,7 @@ $("#slideshow > div:gt(0)").hide();
 
 setInterval(function() { 
   $('#slideshow > div:first')
-    .fadeOut(1000)
+    .fadeOut(500)
     .next()
     .fadeIn(1000)
     .end()
